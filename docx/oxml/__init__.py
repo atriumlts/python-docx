@@ -40,6 +40,16 @@ def register_element_cls(tag, cls):
     namespace[tagroot] = cls
 
 
+def register_element_cls_ns(tag, ns, cls):
+    """
+    Register *cls* to be constructed when the oxml parser encounters an
+    element with matching *tag*. *tag* is a string of the form
+    ``nspfx:tagroot``, e.g. ``'w:document'``.
+    """
+    namespace = element_class_lookup.get_namespace(ns)
+    namespace[tag] = cls
+
+
 def OxmlElement(nsptag_str, attrs=None, nsdecls=None):
     """
     Return a 'loose' lxml element having the tag specified by *nsptag_str*.
@@ -68,6 +78,8 @@ from .shared import CT_DecimalNumber, CT_OnOff, CT_String  # noqa
 register_element_cls("w:evenAndOddHeaders", CT_OnOff)
 register_element_cls("w:titlePg", CT_OnOff)
 
+from .customprops import CT_CustomProperties
+register_element_cls_ns('Properties', 'http://schemas.openxmlformats.org/officeDocument/2006/custom-properties', CT_CustomProperties)
 
 from .coreprops import CT_CoreProperties  # noqa
 register_element_cls('cp:coreProperties', CT_CoreProperties)
