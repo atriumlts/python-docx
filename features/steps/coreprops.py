@@ -86,7 +86,7 @@ def then_I_can_access_the_core_properties_object(context):
 @then('the core property values match the known values')
 def then_the_core_property_values_match_the_known_values(context):
     known_propvals = (
-        ('author',           'Steve Canny'),
+        ('author',           'Atrium'),
         ('category',         'Category'),
         ('comments',         'Description'),
         ('content_status',   'Content Status'),
@@ -94,7 +94,7 @@ def then_the_core_property_values_match_the_known_values(context):
         ('identifier',       'Identifier'),
         ('keywords',         'key; word; keyword'),
         ('language',         'Language'),
-        ('last_modified_by', 'Steve Canny'),
+        ('last_modified_by', 'Atrium'),
         ('last_printed',     datetime(2014, 12, 13, 22, 2, 42)),
         ('modified',         datetime(2014, 12, 13, 22, 6, 0)),
         ('revision',         2),

@@ -26,13 +26,13 @@ version = re.search(
 ).group(1)
 
 
-NAME = 'python-docx'
+NAME = 'python-docx-1'
 VERSION = version
 DESCRIPTION = 'Create and update Microsoft Word .docx files.'
 KEYWORDS = 'docx office openxml word'
-AUTHOR = 'Steve Canny'
-AUTHOR_EMAIL = 'python-docx@googlegroups.com'
-URL = 'https://github.com/python-openxml/python-docx'
+AUTHOR = 'Atrium LTS'
+AUTHOR_EMAIL = 'jillian.kozyra@atrium.co'
+URL = 'https://github.com/atriumlts/python-docx'
 LICENSE = text_of('LICENSE')
 PACKAGES = find_packages(exclude=['tests', 'tests.*'])
 PACKAGE_DATA = {'docx': ['templates/*.xml', 'templates/*.docx']}
@@ -58,7 +58,7 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries'
 ]
 
-LONG_DESCRIPTION = text_of('README.rst') + '\n\n' + text_of('HISTORY.rst')
+LONG_DESCRIPTION = text_of('README.rst')
 
 
 params = {
