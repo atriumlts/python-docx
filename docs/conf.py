@@ -51,8 +51,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'python-docx'
-copyright = u'2013, Steve Canny'
+project = u'python-docx-1'
+copyright = u'2019, Atrium LTS'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -322,7 +322,7 @@ latex_elements = {
 #  documentclass [howto/manual]).
 latex_documents = [
     ('index', 'python-docx.tex', u'python-docx Documentation',
-     u'Steve Canny', 'manual'),
+     u'Atrium LTS', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -352,7 +352,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'python-docx', u'python-docx Documentation',
-     [u'Steve Canny'], 1)
+     [u'Atrium LTS'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -366,7 +366,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'python-docx', u'python-docx Documentation',
-     u'Steve Canny', 'python-docx', 'One line description of project.',
+     u'Atrium LTS', 'python-docx', 'One line description of project.',
      'Miscellaneous'),
 ]
 
