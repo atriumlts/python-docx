@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+behave = ">=1.2.3"
+flake8 = ">=2.0"
+lxml = ">=3.1.0"
+mock = ">=1.0.1"
+pyparsing = ">=2.0.1"
+pytest = ">=2.5"
+twine = "*"
+
+[packages]
+lxml = "*"
+
+[requires]
+python_version = "3.7"
